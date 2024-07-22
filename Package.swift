@@ -6,6 +6,7 @@ let package = Package(
     platforms: [.macOS(.v13)],
     products: [
         .executable(name: "xcresult-issues", targets: ["xcresult-issues"]),
+        .library(name: "XCResultIssues", targets: ["XcresultIssues"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", .upToNextMinor(from: "1.2.1")),
